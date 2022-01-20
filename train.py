@@ -8,7 +8,7 @@ def train():
     mlflow.set_experiment("ads")
 
     with mlflow.start_run():
-        with datasets.open("advertising.csv") as infile:
+        with datasets.open("Company_data.csv") as infile:
             ads = pd.read_csv(infile)
 
         X = ads['TV']
