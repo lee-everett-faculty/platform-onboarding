@@ -43,7 +43,7 @@ Create a new Platform project on the [Projects page](https://datascience.my.facu
 1. In the page that shows details of your model, click _VIEW CODE SNIPPET_ and then
    copy the code to your clipboard.
    
-1. Navigate back to the _Workspace_ page and open the `/project/platform-onboarding/app-predict/app.py`
+1. Navigate back to the _Workspace_ page and open the `platform-onboarding/app-predict/app.py`
    file in the editor.
    Paste the code snippet you copied into the file (under the `CHANGE ME` line) to make 
    it look something like:
@@ -72,7 +72,12 @@ Create a new Platform project on the [Projects page](https://datascience.my.facu
 
 ### Cleanup
 
-Please stop the app when you're done with your exercise.
+Please stop:
+
+- the app
+- your server in the Workspace
+
+when you're done with your exercise.
 
 
 # Credits
