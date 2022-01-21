@@ -22,17 +22,26 @@
    1. Navigate to the right directory: `cd platform-onboarding`.
    1. Run the code to train your model: `python train.py`.
 
-
-
-apply environment to the server
-
-git clone
-
-run training code
-
-go to experiments
-
-register model
+1. Go to the _Experiments_ (left menu). From the experiments list, select `ads`.
+   Then should be 1 run in the `ads` experiment. Open that run.
+   In the file tree under _ARTIFACTS_, click `linear_regression_model`.
+   Click _REGISTER MODEL_ on the right and then create a new model (choose any name).
+   Creating the model should navigate you to the _Models_ page.
+   
+1. In the page that shows details of your model, click _VIEW CODE SNIPPET_ and then
+   copy the code to your clipboard.
+   
+1. Navigate back to the _Workspace_ page and open the `/project/platform-onboarding/app-predict/app.py`
+   file in the editor.
+   Paste the code snippet you copied into the file (under the `CHANGE ME` line) to make 
+   it look something like:
+   
+   ```python
+   model = faculty_models.load_mlmodel(
+         project_id="YOUR PROJECT ID",
+         model_id="YOUR MODEL ID"
+   )
+   ```
 
 go to apps
 
