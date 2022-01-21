@@ -9,7 +9,7 @@
    a file called `Company_data.csv` in the file tree on the left now.
 
 1. Go to the _Environments_ page (left menu) and create a new environment called `latest mlflow`. 
-   In the _PYTHON_ section, add the `mlflow` package of a `pip` type. Use `>=` `1.20.2` as the
+   In the _PYTHON_ section, add the `mlflow` package of a `pip` type. Use `==` `1.20.2` as the
    version constraint.
    
 1. Switch to the _Workspace_ page (left menu) and click the _+_ button to create a new server.
