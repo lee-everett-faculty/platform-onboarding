@@ -2,19 +2,29 @@
 
 ## Instructions
 
-1. Create a new Platform project on the [Projects page](https://datascience.my.faculty.ai/home).
+### Project
+
+Create a new Platform project on the [Projects page](https://datascience.my.faculty.ai/home).
+
+### Data Upload
 
 1. Download the [data file](https://github.com/Kaushik-Varma/linear_regression_model_python/raw/main/Company_data.csv)
-   to your computer. Then go to _Datasets_ (left menu) and upload the file there. There should be
+   to your computer. 
+1. Then go to _Datasets_ (left menu) and upload the file there. There should be
    a file called `Company_data.csv` in the file tree on the left now.
 
+### Setting Up / Customising Servers
+
 1. Go to the _Environments_ page (left menu) and create a new environment called `latest mlflow`. 
-   In the _PYTHON_ section, add the `mlflow` package of a `pip` type. Use `==` `1.20.2` as the
+
+1. In the _PYTHON_ section, add the `mlflow` package of a `pip` type. Use `==` `1.20.2` as the
    version constraint.
    
 1. Switch to the _Workspace_ page (left menu) and click the _+_ button to create a new server.
    In the _Environments_ dropdown, select `latest mlflow`. Leave other inputs as default
    (_Jupyter Server_, _1 core, 4 GB_) and click _CREATE SERVER_.
+
+### Training a Model
 
 1. Open a new terminal on your server and run following:
 
@@ -27,6 +37,8 @@
    In the file tree under _ARTIFACTS_, click `linear_regression_model`.
    Click _REGISTER MODEL_ on the right and then create a new model (choose any name).
    Creating the model should navigate you to the _Models_ page.
+
+### Making Predictions
    
 1. In the page that shows details of your model, click _VIEW CODE SNIPPET_ and then
    copy the code to your clipboard.
@@ -43,6 +55,8 @@
    )
    ```
 
+### App
+
 1. Navigate to _Deployments_ > _Apps_ from the left menu. Create a new app
    of the `Plotly Dash` type with any name and domain name.
    Use the following app settings:
@@ -54,9 +68,11 @@
 
    and the click _SAVE_.
    
-   Click _START APP_ and wait until it shows _RUNNING_. Then your app is ready to use.
-   
- 1. Please stop the app when you're done with your exercise.
+1. Click _START APP_ and wait until it shows _RUNNING_. Then your app is ready to use.
+
+### Cleanup
+
+Please stop the app when you're done with your exercise.
 
 
 # Credits
