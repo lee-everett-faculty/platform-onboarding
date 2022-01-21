@@ -43,13 +43,21 @@
    )
    ```
 
-go to apps
+1. Navigate to _Deployments_ > _Apps_ from the left menu. Create a new app
+   of the `Plotly Dash` type with any name and domain name.
+   Use the following app settings:
+   
+   - _WORKING DIRECTORY_: `/project/platform-onboarding/app-predict`
+   - _PYTHON MODULE_: `app`
+   - _PYTHON OBJECT_: `app.server`
+   - _ENVIRONMENTS_: select `latest mlflow` from the dropdown
 
-create app
+   and the click _SAVE_.
+   
+   Click _START APP_ and wait until it shows _RUNNING_. Then your app is ready to use.
+   
+ 1. Please stop the app when you're done with your exercise.
 
-change app code to use the model
-
-start app
 
 # Credits
 
